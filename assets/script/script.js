@@ -1,9 +1,9 @@
 var today = new Date();
 var hourNow = today.getHours();
 var greeting;
-var header = $("header");   
+var header = $(".current");   
   // tweak needed for different time zones
-header.textcontent(today); 
+
 function greeting () {
 if (hourNow > 18) {
   greeting = 'Good Evening!';
@@ -19,10 +19,28 @@ else if (hourNow > 0) {
 document.write(greeting);
 }
 // THEN the current day is displayed at the top of the calendar
-
+function displayDate () {
+    //header.appendchild(today);
+    header.textcontent(today); 
+}
 
 
 //time blocks for standard business hours. get from jquery
+$( function displayBlocks () {
+    $( "#selectable" ).selectable({
+      stop: function() {
+        var result = $( "#select-result" ).empty();
+        $( ".ui-selected", this ).each(function() {
+          var index = $( "#selectable li" ).index( this );
+          result.append( " #" + ( index + 1 ) );
+        });
+      }
+    });
+
+});
+
+
+
 
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
 
@@ -33,6 +51,6 @@ document.write(greeting);
 
 
 
-
-
+displayBlocks ()
+displayDate ()
 greetings ()
