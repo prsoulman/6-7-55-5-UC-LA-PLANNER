@@ -10,6 +10,7 @@ function displayDate () {
     //header.appendchild(today);
   header.text(today);
 }
+// forloop for each time block is color-coded to indicate whether it is in the past, present, or future
 for (var i =9; i<18; i++) {
   var colorKey='';
   if (currentHour>i){
@@ -21,6 +22,8 @@ for (var i =9; i<18; i++) {
   else {
     colorKey='future';
   }
+
+  //Displays the hour time in normal business time as oppose to military time
   var hourDisplay='';
   if (i<12) {
     hourDisplay=i+' AM';
@@ -31,18 +34,13 @@ for (var i =9; i<18; i++) {
   else {
     hourDisplay=i-12+ ' PM';
   }
+  //
   var rowdiv=$('<div>').addClass('row time-block').attr('id',i);
 var hourDiv=$('<div>').addClass('col-2 hour').text(hourDisplay);
 var textDiv=$('<textarea>').addClass('col-8 description '+ colorKey).val(localStorage.getItem(i));
 var saveBtn=$('<button>').addClass('col-2 saveBtn').text('save').val(i);
   $('.container').append(rowdiv.append(hourDiv, textDiv, saveBtn));
 }
-
-//time blocks for standard business hours. get from jquery
-
-
-// THEN each time block is color-coded to indicate whether it is in the past, present, or future
-
 
 // WHEN I click into a time block THEN I can enter an event
 $('.saveBtn').on('click', function(){
