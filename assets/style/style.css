@@ -4,7 +4,7 @@ body {
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -69,3 +69,17 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.ui-selecting {
+  background: #FECA40;
+ }
+.ui-selected { 
+  background: #F39814; 
+  color: white;
+ }
+#selectable li {
+  margin: 3px; 
+  padding: 0.4em; 
+  font-size: 1.4em;
+   height: 18px; 
+  }
