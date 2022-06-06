@@ -4,20 +4,7 @@ var greeting;
 var header = $(".current");   
   // tweak needed for different time zones
 
-function greeting () {
-if (hourNow > 18) {
-  greeting = 'Good Evening!';
-}
-else if (hourNow > 12) {
-  greeting = 'Good Afternoon!';
-}
-else if (hourNow > 0) {
-  greeting = 'Good Morning!';
-} else {
-  greeting = 'welcome!';
-}
-document.write(greeting);
-}
+
 // THEN the current day is displayed at the top of the calendar
 function displayDate () {
     //header.appendchild(today);
@@ -53,4 +40,3 @@ $( function displayBlocks () {
 
 displayBlocks ()
 displayDate ()
-greetings ()
