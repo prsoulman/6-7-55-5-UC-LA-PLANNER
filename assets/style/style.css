@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: linear-gradient(#f28c75, transparent);
+  background-image: linear-gradient(#f4fff2, transparent);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -20,9 +20,9 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-image: linear-gradient(rgb(83, 237, 237), transparent);
+  background-image: linear-gradient(rgb(189, 250, 250), transparent);
   color: black;
-  border-radius: 15%;
+  border-radius: 1.5%;
   border-bottom: 10px solid black;
   flex-shrink: inherit;
 }
