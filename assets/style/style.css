@@ -1,4 +1,9 @@
+:root {
+  --color1:#9c576e;
+}
+
 body {
+  background-image: linear-gradient(#f28c75, transparent);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -15,10 +20,15 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-image: linear-gradient(rgb(83, 237, 237), transparent);
   color: black;
-  border-radius: 0;
+  border-radius: 15%;
   border-bottom: 10px solid black;
+  flex-shrink: inherit;
+}
+.row-time-block {
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 15%;
 }
 
 .description{
@@ -33,7 +43,7 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
