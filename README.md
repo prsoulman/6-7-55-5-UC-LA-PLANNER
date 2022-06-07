@@ -4,9 +4,9 @@ This is a day-planner that store the data into local-storage so that once refres
 
 **Links**
 
-Github: 
+Github: https://github.com/prsoulman/6-7-55-5-UC-LA-PLANNER.git
 
-Git Pages: 
+Git Pages: https://prsoulman.github.io/6-7-55-5-UC-LA-PLANNER/
 
 **Technologies Used
 ---
@@ -16,5 +16,5 @@ Git Pages:
 -*JQuery*
 -*BootStrap*
 ---
-![Day Planner](Screen%Shot%2022-06-06%at%8.03.54%PM.png)
+![Day Planner](./Screen%20Shot%202022-06-06%20at%208.03.54%20PM.png)
 
